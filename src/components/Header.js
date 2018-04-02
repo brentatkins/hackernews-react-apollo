@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { withRouter } from "react-router";
 import { AUTH_TOKEN } from "../constants";
 
 const Header = () => {
@@ -11,6 +10,10 @@ const Header = () => {
         <div className="fw7 mr1">Hacker News</div>
         <Link to="/" className="ml1 no-underline black">
           new
+        </Link>
+        <div className="ml1">|</div>
+        <Link to="/top" className="ml1 no-underline black">
+          top
         </Link>
         <div className="ml1">|</div>
         <Link to="/search" className="ml1 no-underline black">
